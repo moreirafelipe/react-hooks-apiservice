@@ -13,7 +13,12 @@ function NotFound () {
 
   useEffect(() => {
     let timer = setInterval(tick, 1000);
-    return () => {if(seconds === 0){clearInterval(timer) ; navigate("/home")}};
+    return () => {
+      if(seconds === 0){
+        clearInterval(timer);
+        navigate("/home")
+        }
+      };
   }, [seconds])
 
   return(
