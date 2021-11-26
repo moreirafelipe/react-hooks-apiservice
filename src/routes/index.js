@@ -6,7 +6,7 @@ import NotFound from '../pages/NotFound';
 const RouteList = () => (
   <BrowserRouter>
     <Routes>
-      <Route exact path="/" element={<NotFound />} />
+      <Route exact path="/" element={<NotFound/>} />
       <Route path="/home" element={<Home />} />
       <Route path="/repository" element={<Repository />} />
       <Route path="*" element={<NotFound />} />

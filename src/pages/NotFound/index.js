@@ -17,10 +17,11 @@ function NotFound () {
   }, [seconds])
 
   return(
-      <>
-        <div>{seconds}</div>
+      <div className=" mt-5 text-center">
+        <h1>Oops!</h1>
         <h2>404 nada por aqui</h2>
-      </>
+        <h2>Você será redirecionado em {seconds} segundos :)</h2>
+      </div>
   )
 }
 
